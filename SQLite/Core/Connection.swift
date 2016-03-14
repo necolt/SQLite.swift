@@ -21,8 +21,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-
-import Dispatch
+import Foundation
+import CDispatch
+import CSQLite
 
 /// A connection to SQLite.
 public final class Connection {
