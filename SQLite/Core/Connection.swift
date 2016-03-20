@@ -22,8 +22,8 @@
 // THE SOFTWARE.
 //
 import Foundation
-import CDispatch
 import CSQLite
+import Dispatch
 
 /// A connection to SQLite.
 public final class Connection {

@@ -1,5 +1,7 @@
 import XCTest
 import SQLite
+import Foundation
+import Dispatch
 
 class ConnectionTests : SQLiteTestCase {
 

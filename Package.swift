@@ -1,9 +1,10 @@
 import PackageDescription
 
 let package = Package(
-  exclude: ["Documentation", "podstuff"],
+  exclude: ["Documentation", "podstuff", "SQLiteTests"],
+//  targets: [
+//      Target(name: "Tests", dependencies: [.Target(name: "SQLite")])],
   dependencies: [
-    .Package(url: "https://github.com/sheffler/CDispatch", majorVersion:1),
     .Package(url: "https://github.com/necolt/CSQLite.git", majorVersion:0)
   ]
 )
