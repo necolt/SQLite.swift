@@ -29,11 +29,11 @@ extension Module {
     }
 
     @warn_unused_result public static func FTS4(columns: [Expressible] = [], tokenize tokenizer: Tokenizer? = nil) -> Module {
-        var col = columns
+        var columns = columns
         if let tokenizer = tokenizer {
-            col.append("=".join([Expression<Void>(literal: "tokenize"), Expression<Void>(literal: tokenizer.description)]))
+            columns.append("=".join([Expression<Void>(literal: "tokenize"), Expression<Void>(literal: tokenizer.description)]))
         }
-        return Module(name: "fts4", arguments: col)
+        return Module(name: "fts4", arguments: columns)
     }
 
 }

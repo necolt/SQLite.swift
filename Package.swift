@@ -1,7 +1,7 @@
 import PackageDescription
 
 let package = Package(
-  exclude: ["Documentation", "podstuff", "SQLiteTests"],
+  exclude: ["CocoaPods", "Documentation", "podstuff", "SQLiteTests"],
 //  targets: [
 //      Target(name: "Tests", dependencies: [.Target(name: "SQLite")])],
   dependencies: [
